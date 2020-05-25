@@ -1,0 +1,220 @@
+
+body{
+	background-image: url(../images/fond.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: scroll;
+}
+
+header{
+	background-color: cadetblue;
+	border: double 3px aquamarine;
+	box-shadow: 0 0 15px 5px rgba(44,82,100,.75);
+	color: white;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+/*Стили элементов в шапке*/
+a, a:visited{
+	text-decoration: none;
+	margin: 5px;
+	color: greenyellow;
+}
+
+a:hover{
+	color: yellow;
+	text-decoration: underline;
+}
+
+h1, h2{
+	font-size: 150%;
+}
+
+/*Стили для выпадающего списка*/
+.topmenu > li{
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+}
+
+.topmenu > li:last-child{
+	margin-right: 0;
+	border-right: double 4px salmon;
+}
+
+.submenu{
+	position: absolute;
+	list-style-type: none;
+	display: none;
+	background: blueviolet;
+}
+
+li:hover .submenu{
+	display: block;
+	text-align: left;
+	padding-left: 0;
+	border: solid 2px salmon;
+}
+
+.submenu li{
+	padding: 5px;
+}
+
+.submenu li:last-child{
+	border-top: solid 2px salmon;
+}
+/*Конец стилей для выпадающего списка*/
+
+/*Конец стилей элементов в шапке*/
+
+aside{
+	background-color: peru; 
+	border: solid 3px rgb(75,75,75);
+	box-shadow: 0 0 15px 5px rgba(44,82,100,.75);
+	float: left;
+	position: absolute;
+	border-radius: 0 15px 15px 0;
+	padding: 5px;
+	margin: auto 10px;
+	width: 160px;
+}
+
+.asid{
+	margin: 5px 0;
+}
+
+/*Стили элементов слайдера*/
+section h2{
+	text-align: center;
+}
+
+.slider{
+	width: 500px;
+	height: 300px;
+	margin: auto;
+	margin: 20px auto;
+	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: slide;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slide{
+	from {
+	 top: 0;
+	 left: 0;
+	}
+	12.5% {
+	 transform: translate(0px, 0px);
+	}
+	25% {
+	 transform: translate(-500px, 0);
+	}
+	36% {
+	 transform: translate(-500px, 300px);
+	}
+	37% {
+	 transform: translate(500px, 300px);
+	}
+	87.5% {
+	 transform: translate(500px, 0);	 
+	}
+	to {
+	 transform: translate(0px, 0px);
+	}
+}
+
+.slide1{ 
+	background: url(../images/slider/1.png);
+	animation-delay: 7.5s;
+   }
+   .slide2 { 
+	background: url(../images/slider/2.png);
+	animation-delay: 5s;
+   }
+   .slide3 { 
+	background: url(../images/slider/3.png);
+	animation-delay: 2.5s;
+   }
+   .slide4 { 
+	background: url(../images/slider/4.png);
+	animation-delay: 0s;
+}
+/*Конец стилей элементов слайдера*/
+
+article, section{
+	background-color: wheat; 
+	border: solid 3px rgb(75,75,75);
+	box-shadow: 0 0 15px 5px rgba(44,82,100,.75);
+	width: 75%;
+	margin: 20px 0 20px 210px;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+/*Стили элементов в статье*/
+figure{
+	background-color: beige;
+	border: solid 2px black;
+	padding: 5px;
+	margin-left: 10px;
+	float: right;
+	text-align: center;
+}
+
+article h2{
+	margin: 10px 0;
+	border-bottom: solid 2px grey;
+	text-align: center;
+}
+
+article h3{
+	font-size: 135%;
+}
+
+article h4{
+	font-size: 115%;
+}
+
+article h3, article h4{
+	margin: 5px 0;
+	border-bottom: dashed 1px grey;
+}
+
+td{
+	padding: 10px 5px;
+}
+
+img{
+	margin: 5px;
+	border: solid 1px black;
+}
+
+iframe{
+	margin: 15px;
+}
+/*Конец стилей элементов в статье*/
+
+footer{
+	background-color: black;
+	border-top: solid 3px gray;
+	box-shadow: 0 0 15px 5px rgba(128,128,128,.75);
+	color: white;
+	padding: 15px;
+	font-size: 14px;
+	text-align: center;
+}

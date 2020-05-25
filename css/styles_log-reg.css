@@ -1,0 +1,74 @@
+
+#log{
+    background-image: url(../images/fond_log.jpg);
+}
+
+#reg{
+    background-color: gray;
+    background-image: url(../images/fond_reg.jpg);
+}
+
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: scroll;
+}
+
+img{
+    background-color: yellow;
+    border: solid 2px aqua;
+    border-radius: 18px;
+}
+
+.logform, .regform{
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+	box-shadow: 0 0 15px 5px rgba(44,82,100,.75);
+    width: 300px;
+    margin: 30vh 40vw;
+    padding: 16px;
+}
+
+.logform{
+    background-color: gainsboro;
+    border: double 3px aquamarine;
+}
+
+.regform{
+    background-color: peachpuff;
+    border: double 3px blue;
+}
+
+h1{
+    font-size: 150%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+input{
+    width: 90%;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+input[type=checkbox]{
+    width: 10%;
+}
+
+button{
+    background-color: greenyellow;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px 75px;
+    width: 150px;
+}
+
+a, a:visited{
+    text-decoration: none;
+	color: purple;
+}
+
+a:hover{
+	color: orangered;
+}
