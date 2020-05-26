@@ -1,5 +1,6 @@
 
 body{
+	background-color: green;
 	background-image: url(../images/fond.png);
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -195,8 +196,28 @@ article h3, article h4{
 	border-bottom: dashed 1px grey;
 }
 
-td{
-	padding: 10px 5px;
+/*начало доп. изменения для страниц about,datewelc,gallary,videos*/
+.sitestatistics{
+	font-weight: bold;
+	font-size: 105%;
+	background-color: white;
+	border: solid 3px black;
+	border-collapse: separate;
+}
+
+.sitestatistics tr > td{
+	border: double 2px gray;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+.calendarforms tr > td{
+	padding: 15px;
+}
+
+button{
+	padding: 5px;
 }
 
 img{
@@ -207,6 +228,7 @@ img{
 iframe{
 	margin: 15px;
 }
+/*конец доп. изменений*/
 /*Конец стилей элементов в статье*/
 
 footer{
